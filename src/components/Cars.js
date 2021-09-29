@@ -1,13 +1,11 @@
 import {COLOR_TRANSLATIONS} from "../data/data";
+import {Section} from "./Section";
 
 export default function Cars(props) {
     const {title, cars} = props;
-    return (<div className="section">
-        <h3>{title}</h3>
-        <div>
+    return <Section title={title}>
             {cars.map(c => <Car car={c} key={c.name} />)}
-        </div>
-    </div>);
+        </Section>
 }
 
 function Car(props) {
