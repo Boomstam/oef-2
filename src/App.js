@@ -1,8 +1,8 @@
 import './App.css';
 //import {NUMBER_DATA} from "./data/data";
 //import Numbers from  "./components/Numbers";
-//import {CAR_DATA} from "./data/data";
-//import Cars from  "./components/Cars";
+import {CAR_DATA} from "./data/data";
+import Cars from  "./components/Cars";
 import {PERSON_DATA} from "./data/data";
 import Persons from "./components/Persons";
 import Numbers from "./components/Numbers";
@@ -23,11 +23,11 @@ function App() {
       <Numbers title="Leeftijden" numbers={personAges}></Numbers>
       <Numbers title="Gesorteerde Leeftijden" numbers={sortedPersonAges}></Numbers>
       <Cities title="Steden" cities={citiesWithNumberOfPersons} />
+      <Cars title="Auto's" cars={CAR_DATA} />
     </div>
   );
 }
 //<Numbers title="Numbers" numbers={NUMBER_DATA}></Numbers>
-//<Cars title="Auto's" cars={CAR_DATA} />
 
 function removeDuplicates(array) {
     let x = {};
